@@ -77,24 +77,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Animación de barras de huella de carbono
-    const footprintBars = document.querySelectorAll('.footprint-bar');
-    
-    if (footprintBars.length > 0) {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const bar = entry.target;
-                    const value = bar.getAttribute('data-value');
-                    bar.style.height = `${value}%`;
-                    observer.unobserve(bar);
-                }
-            });
-        }, { threshold: 0.5 });
-        
-        footprintBars.forEach(bar => observer.observe(bar));
-    }
-
     // Formulario de contacto
     const contactForm = document.getElementById('contactForm');
     
@@ -232,34 +214,6 @@ $(document).ready(function() {
         }
     });
     
-    // Hotspots interactivos
-    $('.hotspot').hover(
-        function() {
-            // Posicionamiento inteligente
-            const $info = $(this).find('.hotspot-info');
-            const rect = this.getBoundingClientRect();
-            const viewportWidth = window.innerWidth;
-            
-            if (rect.left > viewportWidth / 2) {
-                $info.css({
-                    'left': 'auto',
-                    'right': '100%',
-                    'transform-origin': 'right center'
-                });
-            } else {
-                $info.css({
-                    'left': '100%',
-                    'right': 'auto',
-                    'transform-origin': 'left center'
-                });
-            }
-            
-            $(this).find('.hotspot-marker').css('transform', 'scale(1.2)');
-        },
-        function() {
-            $(this).find('.hotspot-marker').css('transform', 'scale(1)');
-        }
-    );
     
     // Efecto parallax en imágenes
     $(window).mousemove(function(e) {
@@ -271,5 +225,120 @@ $(document).ready(function() {
             const moveY = (mouseY - 0.5) * 20;
             $(this).css('transform', `translate(${moveX}px, ${moveY}px) scale(1.05)`);
         });
+    });
+});
+
+// Script para la sección de impacto ambiental
+document.addEventListener('DOMContentLoaded', function() {
+    // Animación de números
+    const animateNumbers = () => {
+        const numberElements = document.querySelectorAll('.animate-number');
+        
+        const animate = (element) => {
+            const target = parseInt(element.getAttribute('data-target'));
+            const duration = 2000; // 2 segundos
+            const start = 0;
+            const increment = target / (duration / 16); // 60fps
+            
+            let current = start;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    clearInterval(timer);
+                    current = target;
+                }
+                element.textContent = target === 1900 ? Math.floor(current) : current.toFixed(1);
+            }, 16);
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animate(entry.target);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        numberElements.forEach(el => observer.observe(el));
+    };
+    
+    // Sistema de pestañas para soluciones
+    const solutionTabs = document.querySelectorAll('.eco-solution-tab');
+    const solutionPanes = document.querySelectorAll('.eco-solution-pane');
+    
+    solutionTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            // Remover activos
+            solutionTabs.forEach(t => t.classList.remove('active'));
+            solutionPanes.forEach(p => p.classList.remove('active'));
+            
+            // Activar el seleccionado
+            tab.classList.add('active');
+            const tabId = tab.getAttribute('data-tab');
+            document.getElementById(tabId).classList.add('active');
+        });
+    });
+    
+    // Animación de barras de huella de carbono
+    const footprintBars = document.querySelectorAll('.eco-footprint-bar');
+    
+    if (footprintBars.length > 0) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const bar = entry.target;
+                    bar.style.width = bar.getAttribute('data-value');
+                    observer.unobserve(bar);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        footprintBars.forEach(bar => observer.observe(bar));
+    }
+    
+    // Inicializar animaciones
+    animateNumbers();
+});
+
+
+// Actualiza tu JavaScript con este código:
+document.addEventListener('DOMContentLoaded', function() {
+    // Hotspots interactivos mejorados
+    const hotspots = document.querySelectorAll('.hotspot');
+    
+    hotspots.forEach(hotspot => {
+        const marker = hotspot.querySelector('.hotspot-marker');
+        const info = hotspot.querySelector('.hotspot-info');
+        
+        // Mostrar al entrar al hotspot (marker o info)
+        hotspot.addEventListener('mouseenter', () => {
+            marker.style.transform = 'scale(1.2)';
+            info.style.opacity = '1';
+            info.style.pointerEvents = 'auto';
+            info.style.transform = 'translateY(0)';
+        });
+        
+        // Ocultar al salir del hotspot (marker e info)
+        hotspot.addEventListener('mouseleave', () => {
+            marker.style.transform = 'scale(1)';
+            info.style.opacity = '0';
+            info.style.pointerEvents = 'none';
+            info.style.transform = 'translateY(10px)';
+        });
+        
+        // Posicionamiento inteligente
+        const rect = hotspot.getBoundingClientRect();
+        const viewportWidth = window.innerWidth;
+        
+        if (rect.left > viewportWidth / 2) {
+            info.style.left = 'auto';
+            info.style.right = '100%';
+            info.style.transformOrigin = 'right center';
+        } else {
+            info.style.left = '100%';
+            info.style.right = 'auto';
+            info.style.transformOrigin = 'left center';
+        }
     });
 });
