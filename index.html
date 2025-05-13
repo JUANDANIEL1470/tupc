@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computadoras: Tecnología, Componentes y Sustentabilidad</title>
+    <meta name="description" content="Información completa sobre computadoras: sus componentes, materiales minerales, proceso de fabricación e impacto ambiental">
+    <meta name="keywords" content="computadoras, hardware, componentes, minerales, impacto ambiental, reciclaje electrónico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Barra de navegación superior -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="quick-links">
+                <a href="#"><i class="fas fa-question-circle"></i> Ayuda</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> Ubicación</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Encabezado principal -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo-container">
+                <h1 class="logo">TU<span>PC</span></h1>
+                <p class="tagline">Tecnología Sostenible</p>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#inicio" class="active"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="#historia"><i class="fas fa-history"></i> Historia</a></li>
+                    <li><a href="#componentes"><i class="fas fa-microchip"></i> Componentes</a></li>
+                    <li><a href="#materiales"><i class="fas fa-gem"></i> Materiales</a></li>
+                    <li><a href="#impacto"><i class="fas fa-leaf"></i> Impacto</a></li>
+                    <li><a href="#soluciones"><i class="fas fa-recycle"></i> Soluciones</a></li>
+                    <li><a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Menú móvil">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1 class="animate__animated animate__fadeInDown">El Mundo de las Computadoras</h1>
+            <p class="animate__animated animate__fadeInUp">Descubre lo que hay dentro de tu máquina y su impacto en el planeta</p>
+            <div class="hero-buttons animate__animated animate__fadeInUp">
+                <a href="#componentes" class="btn btn-primary">Explorar Componentes</a>
+                <a href="#impacto" class="btn btn-secondary">Ver Impacto Ambiental</a>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="circuit-animation" id="circuit-animation"></div>
+    </section>
+
+    <!-- Sección de introducción -->
+    <section class="intro-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>¿Qué hace funcionar tu computadora?</h2>
+                <p>Una mirada profunda a la tecnología que usamos cada día</p>
+                <div class="divider"></div>
+            </div>
+            <div class="intro-content">
+                <div class="intro-text">
+                    <p>Las computadoras modernas son maravillas de la ingeniería que condensan décadas de avances tecnológicos en dispositivos cada vez más pequeños y potentes. Pero detrás de esta tecnología se esconde una compleja red de componentes interconectados, materiales escasos y procesos de fabricación con importantes consecuencias ambientales.</p>
+                    <p>En esta web exploraremos desde los circuitos más básicos hasta los últimos avances en computación sostenible, analizando tanto los aspectos técnicos como los ecológicos de esta tecnología omnipresente.</p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="50">0</div>
+                            <div class="stat-label">Millones de toneladas de e-waste anuales</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="60">0</div>
+                            <div class="stat-label">Elementos de la tabla periódica en un smartphone</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="1.5">0</div>
+                            <div class="stat-label">Millones de litros de agua para fabricar chips</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro-image">
+                    <img src="images/motherboard.jpg" alt="Placa madre de computadora" class="featured-image">
+                    <div class="image-caption">Placa madre moderna con componentes electrónicos</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de línea de tiempo mejorada -->
+    <section id="historia" class="timeline-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="animate__animated animate__fadeInDown">Evolución Histórica de las Computadoras</h2>
+                <p class="animate__animated animate__fadeIn animate__delay-1s">Desde los primeros dispositivos mecánicos hasta la inteligencia artificial</p>
+                <div class="divider animate__animated animate__fadeIn animate__delay-1s"></div>
+            </div>
+            
+            <div class="timeline-controls">
+                <button class="timeline-filter active" data-filter="all">Todos</button>
+                <button class="timeline-filter" data-filter="hardware">Hardware</button>
+                <button class="timeline-filter" data-filter="software">Software</button>
+                <button class="timeline-filter" data-filter="impacto">Impacto Social</button>
+            </div>
+            
+            <div class="timeline">
+                <!-- Añadí categorías "data-category" para el filtrado y más hitos -->
+                <div class="timeline-item" data-category="hardware">
+                    <div class="timeline-date">1837</div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Máquina Analítica de Babbage</h3>
+                        <p>Primer diseño de un computador programable general, considerado el precursor de las computadoras modernas.</p>
+                        <div class="timeline-image-hover">
+                            <img src="images/babbage-machine.jpg" alt="Máquina de Babbage" class="hidden">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-category="hardware">
+                    <div class="timeline-date">1940s</div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-plug"></i>
+                        </div>
+                        <h3>Primeras computadoras electrónicas</h3>
+                        <p>ENIAC (EEUU) y Colossus (UK), usando 18,000 válvulas de vacío y ocupando habitaciones enteras. Consumían 150 kW de potencia.</p>
+                        <div class="timeline-image-hover">
+                            <img src="images/eniac.jpg" alt="Máquina de Babbage" class="hidden">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-category="hardware software">
+                    <div class="timeline-date">1951</div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h3>UNIVAC I - Primera computadora comercial</h3>
+                        <p>Primer computador producido en serie, usado para el censo de EEUU. Introdujo el concepto de programa almacenado.</p>
+                        <div class="timeline-image-hover">
+                            <img src="images/univac1.jpg" alt="Máquina de Babbage" class="hidden">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-category="hardware">
+                    <div class="timeline-date">1958</div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                        <h3>Invención del circuito integrado</h3>
+                        <p>Jack Kilby y Robert Noyce desarrollan independientemente el chip de silicio, revolucionando la miniaturización.</p>
+                        <div class="timeline-image-hover">
+                            <img src="images/silicio.jpg" alt="Máquina de Babbage" class="hidden">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-category="software impacto">
+                    <div class="timeline-date">1975</div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h3>Altair 8800 y Microsoft</h3>
+                        <p>Primer computador personal exitoso. Bill Gates y Paul Allen desarrollan BASIC para él, fundando Microsoft.</p>
+                        <div class="timeline-image-hover">
+                            <img src="images/Altair8800.jpg" alt="Máquina de Babbage" class="hidden">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-category="impacto">
+                    <div class="timeline-date">1984</div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <h3>Macintosh y la GUI</h3>
+                        <p>Apple introduce la interfaz gráfica al público masivo, cambiando para siempre la interacción humano-computadora.</p>
+                        <div class="timeline-image-hover">
+                            <img src="images/Macintosh.jpg" alt="Máquina de Babbage" class="hidden">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-category="software">
+                    <div class="timeline-date">1991</div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fab fa-linux"></i>
+                        </div>
+                        <h3>Nace Linux</h3>
+                        <p>Linus Torvalds libera el kernel Linux, dando inicio al software open-source moderno.</p>
+                        <div class="timeline-image-hover">
+                            <img src="images/linux.jpg" alt="Máquina de Babbage" class="hidden">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-category="hardware">
+                    <div class="timeline-date">2007</div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Revolución móvil</h3>
+                        <p>iPhone introduce el concepto de smartphone moderno, combinando computación, internet y telefonía.</p>
+                        <div class="timeline-image-hover">
+                            <img src="images/iphone.jpg" alt="Máquina de Babbage" class="hidden">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-category="impacto">
+                    <div class="timeline-date">2016</div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>AlphaGo y el boom de la IA</h3>
+                        <p>El sistema de DeepMind vence al campeón mundial de Go, marcando un hito en inteligencia artificial.</p>
+                        <div class="timeline-image-hover">
+                            <img src="images//AlphaGo.jpg" alt="Máquina de Babbage" class="hidden">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-category="hardware impacto">
+                    <div class="timeline-date">Presente/Futuro</div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-computer"></i>
+                        </div>
+                        <h3>Computación cuántica y sostenibilidad</h3>
+                        <p>IBM y Google lideran la carrera cuántica mientras la industria enfrenta el desafío de la sustentabilidad ambiental.</p>
+                        <div class="timeline-image-hover">
+                            <img src="images/computer_quantum.jpg" alt="Máquina de Babbage" class="hidden">
+                        </div>
+                        <div class="timeline-badge">¡Nuevo!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de componentes mejorada -->
+    <section id="componentes" class="components-section">
+        <div class="container">
+            <div class="section-header animate__animated animate__fadeIn">
+                <h2>Componentes Principales de una Computadora</h2>
+                <p>Descubre la ingeniería detrás de cada pieza y su impacto ambiental</p>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="components-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="placa">
+                        <i class="fas fa-microchip"></i> Placa Madre
+                    </button>
+                    <button class="tab-btn" data-tab="cpu">
+                        <i class="fas fa-brain"></i> Procesador
+                    </button>
+                    <button class="tab-btn" data-tab="ram">
+                        <i class="fas fa-memory"></i> Memoria
+                    </button>
+                    <button class="tab-btn" data-tab="gpu">
+                        <i class="fas fa-gamepad"></i> Gráficos
+                    </button>
+                    <button class="tab-btn" data-tab="almacenamiento">
+                        <i class="fas fa-hdd"></i> Almacenamiento
+                    </button>
+                </div>
+                
+                <!-- Pestaña Placa Madre -->
+                <div class="tab-content active" id="placa">
+                    <div class="tab-content-inner">
+                        <div class="tab-image">
+                            <img src="images/motherboard.jpg" alt="Placa madre" class="component-img">
+                            <div class="image-hotspots">
+                                <div class="hotspot" style="top: 25%; left: 35%;" data-info="socket">
+                                    <div class="hotspot-marker"></div>
+                                    <div class="hotspot-info">
+                                        <img src="images/cpu-socket.jpg" alt="Socket CPU" class="hotspot-img">
+                                        <h4>Zócalo del CPU</h4>
+                                        <p>Conecta el procesador con la placa base. Fabricado con aleación de cobre y níquel para máxima conductividad.</p>
+                                    </div>
+                                </div>
+                                <div class="hotspot" style="top: 45%; left: 65%;" data-info="ram">
+                                    <div class="hotspot-marker"></div>
+                                    <div class="hotspot-info">
+                                        <img src="images/ram-slots.jpg" alt="Ranuras RAM" class="hotspot-img">
+                                        <h4>Ranuras RAM</h4>
+                                        <p>DDR4/DDR5 con 288 pines. Consumo: 1.2-1.35V. Contactos bañados en oro para mejor conexión.</p>
+                                    </div>
+                                </div>
+                                <div class="hotspot" style="top: 75%; left: 50%;" data-info="chipset">
+                                    <div class="hotspot-marker"></div>
+                                    <div class="hotspot-info">
+                                        <img src="images/chipset.jpg" alt="Chipset" class="hotspot-img">
+                                        <h4>Chipset</h4>
+                                        <p>Coordina comunicación entre componentes. Los modernos contienen millones de transistores en solo 14mm².</p>
+                                    </div>
+                                </div>
+                                <div class="hotspot" style="top: 60%; left: 20%;" data-info="bios">
+                                    <div class="hotspot-marker"></div>
+                                    <div class="hotspot-info">
+                                        <img src="images/bios-chip.jpg" alt="BIOS" class="hotspot-img">
+                                        <h4>Chip BIOS/UEFI</h4>
+                                        <p>Memoria flash que almacena el firmware. Típicamente 16-32MB con ~100,000 ciclos de escritura.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-text">
+                            <div class="component-header">
+                                <h3>Placa Madre</h3>
+                                <div class="component-badge eco-rating" data-rating="3">
+                                    <i class="fas fa-leaf"></i> Impacto: Medio
+                                </div>
+                            </div>
+                            <p class="component-description">La placa base es el sistema nervioso central que interconecta todos los componentes. Las modernas utilizan hasta 12 capas de fibra de vidrio y cobre, conteniendo trazas de oro, paladio y otros metales preciosos para garantizar la conductividad.</p>
+                            
+                            <div class="specs-accordion">
+                                <div class="accordion-item active">
+                                    <div class="accordion-header">
+                                        <h4><i class="fas fa-microscope"></i> Especificaciones Técnicas</h4>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <div class="specs-grid">
+                                            <div class="spec-item">
+                                                <div class="spec-name">Factor de forma</div>
+                                                <div class="spec-value">ATX (30.5 × 24.4 cm)</div>
+                                            </div>
+                                            <div class="spec-item">
+                                                <div class="spec-name">Capas de PCB</div>
+                                                <div class="spec-value">6-12 capas</div>
+                                            </div>
+                                            <div class="spec-item">
+                                                <div class="spec-name">Conectividad</div>
+                                                <div class="spec-value">PCIe 4.0/5.0, USB 3.2 Gen 2x2</div>
+                                            </div>
+                                            <div class="spec-item">
+                                                <div class="spec-name">Materiales</div>
+                                                <div class="spec-value">FR-4, cobre, estaño, oro</div>
+                                            </div>
+                                            <div class="spec-item">
+                                                <div class="spec-name">Temperatura operación</div>
+                                                <div class="spec-value">0°C a 70°C</div>
+                                            </div>
+                                            <div class="spec-item">
+                                                <div class="spec-name">Vida útil</div>
+                                                <div class="spec-value">50,000 horas (5-8 años)</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <h4><i class="fas fa-recycle"></i> Impacto Ambiental</h4>
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <div class="eco-facts">
+                                            <div class="eco-fact">
+                                                <i class="fas fa-bolt"></i>
+                                                <span>Fabricación consume ~3.2 kWh por unidad</span>
+                                            </div>
+                                            <div class="eco-fact">
+                                                <i class="fas fa-tint"></i>
+                                                <span>Requiere 1,500L de agua para producción</span>
+                                            </div>
+                                            <div class="eco-fact">
+                                                <i class="fas fa-recycle"></i>
+                                                <span>Solo 35% de materiales son reciclables</span>
+                                            </div>
+                                        </div>
+                                        <div class="eco-image-container">
+                                            <img src="images/e-waste.jpg" alt="Desechos electrónicos" class="eco-image">
+                                            <div class="eco-image-caption">Placas base representan ~22% de los desechos electrónicos</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pestaña Procesador -->
+                <div class="tab-content" id="cpu">
+                    <div class="tab-content-inner">
+                        <div class="tab-image">
+                            <img src="images/cpu-chip.jpg" alt="Procesador" class="component-img">
+                            <div class="image-hotspots">
+                                <div class="hotspot" style="top: 30%; left: 40%;" data-info="die">
+                                    <div class="hotspot-marker"></div>
+                                    <div class="hotspot-info">
+                                        <img src="images/cpu-die.jpg" alt="CPU Die" class="hotspot-img">
+                                        <h4>Die del Procesador</h4>
+                                        <p>Núcleo de silicio que contiene hasta 50 billones de transistores en chips modernos. Fabricado con litografía EUV de 3-7nm.</p>
+                                    </div>
+                                </div>
+                                <div class="hotspot" style="top: 60%; left: 70%;" data-info="ihs">
+                                    <div class="hotspot-marker"></div>
+                                    <div class="hotspot-info">
+                                        <img src="images/heat-spreader.jpg" alt="Heat Spreader" class="hotspot-img">
+                                        <h4>Disipador Integrado (IHS)</h4>
+                                        <p>Cubierta metálica de cobre niquelado que distribuye el calor. Contacto con el die mediante soldadura o pasta térmica.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-text">
+                            <div class="component-header">
+                                <h3>Procesador (CPU)</h3>
+                                <div class="component-badge eco-rating" data-rating="4">
+                                    <i class="fas fa-leaf"></i> Impacto: Alto
+                                </div>
+                            </div>
+                            <p class="component-description">El cerebro del sistema, los CPUs modernos contienen hasta 50 billones de transistores en un espacio menor a una uña. Requieren salas limpias clase 1 (menos de 1 partícula por pie cúbico) para su fabricación, consumiendo enormes cantidades de agua ultrapura y energía.</p>
+                            
+                            <div class="specs-accordion">
+                                <div class="accordion-item active">
+                                    <div class="accordion-header">
+                                        <h4><i class="fas fa-microscope"></i> Especificaciones Técnicas</h4>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <div class="specs-grid">
+                                            <div class="spec-item">
+                                                <div class="spec-name">Núcleos/Hilos</div>
+                                                <div class="spec-value">Hasta 64/128 (servidores)</div>
+                                            </div>
+                                            <div class="spec-item">
+                                                <div class="spec-name">Frecuencia</div>
+                                                <div class="spec-value">3-6 GHz (hasta 6.5 GHz boost)</div>
+                                            </div>
+                                            <div class="spec-item">
+                                                <div class="spec-name">Litografía</div>
+                                                <div class="spec-value">3-7 nm EUV</div>
+                                            </div>
+                                            <div class="spec-item">
+                                                <div class="spec-name">Cache</div>
+                                                <div class="spec-value">Hasta 128MB L3</div>
+                                            </div>
+                                            <div class="spec-item">
+                                                <div class="spec-name">TDP</div>
+                                                <div class="spec-value">65-350W</div>
+                                            </div>
+                                            <div class="spec-item">
+                                                <div class="spec-name">Transistores</div>
+                                                <div class="spec-value">Hasta 50 billones</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <h4><i class="fas fa-recycle"></i> Impacto Ambiental</h4>
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <div class="eco-facts">
+                                            <div class="eco-fact">
+                                                <i class="fas fa-bolt"></i>
+                                                <span>Fabricación consume ~20 kWh por unidad</span>
+                                            </div>
+                                            <div class="eco-fact">
+                                                <i class="fas fa-tint"></i>
+                                                <span>Requiere 20,000L de agua ultrapura</span>
+                                            </div>
+                                            <div class="eco-fact">
+                                                <i class="fas fa-smog"></i>
+                                                <span>Emite 50kg CO₂ por chip fabricado</span>
+                                            </div>
+                                        </div>
+                                        <div class="eco-image-container">
+                                            <img src="images/semiconductor-fab.jpg" alt="Fábrica de semiconductores" class="eco-image">
+                                            <div class="eco-image-caption">Las fábricas de CPUs consumen tanta energía como una ciudad pequeña</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pestaña Memoria RAM -->
+                <div class="tab-content" id="ram">
+                    <div class="tab-content-inner">
+                        <div class="tab-image">
+                            <img src="images/ram-modules.jpg" alt="Memoria RAM" class="component-img">
+                            <div class="image-hotspots">
+                                <div class="hotspot" style="top: 40%; left: 30%;" data-info="chips">
+                                    <div class="hotspot-marker"></div>
+                                    <div class="hotspot-info">
+                                        <img src="images/ram-chips.jpg" alt="Chips RAM" class="hotspot-img">
+                                        <h4>Chips de Memoria</h4>
+                                        <p>DRAM SLC o MLC con celdas de capacitores microscópicos. Cada chip contiene 8-16Gb de capacidad.</p>
+                                    </div>
+                                </div>
+                                <div class="hotspot" style="top: 70%; left: 60%;" data-info="pcb">
+                                    <div class="hotspot-marker"></div>
+                                    <div class="hotspot-info">
+                                        <h4>PCB de Alta Densidad</h4>
+                                        <p>Placa de 6-8 capas con trazas de impedancia controlada para señales de alta frecuencia (hasta 6400MHz).</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-text">
+                            <div class="component-header">
+                                <h3>Memoria RAM</h3>
+                                <div class="component-badge eco-rating" data-rating="2">
+                                    <i class="fas fa-leaf"></i> Impacto: Moderado
+                                </div>
+                            </div>
+                            <p class="component-description">La memoria de acceso aleatorio actúa como el espacio de trabajo temporal del sistema. Los módulos DDR5 modernos transfieren datos a velocidades de hasta 51.2GB/s, usando apenas 1.1V de energía gracias a diseños de bajo voltaje.</p>
+                            
+                            <div class="specs-accordion">
+                                <div class="accordion-item active">
+                                    <div class="accordion-header">
+                                        <h4><i class="fas fa-microscope"></i> Especificaciones Técnicas</h4>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <div class="specs-grid">
+                                            <div class="spec-item">
+                                                <div class="spec-name">Tipo</div>
+                                                <div class="spec-value">DDR4/DDR5 SDRAM</div>
+                                            </div>
+                                            <div class="spec-item">
+                                                <div class="spec-name">Capacidad</div>
+                                                <div class="spec-value">8-128GB por módulo</div>
+                                            </div>
+                                            <div class="spec-item">
+                                                <div class="spec-name">Frecuencia</div>
+                                                <div class="spec-value">1600-6400 MHz</div>
+                                            </div>
+                                            <div class="spec-item">
+                                                <div class="spec-name">Voltaje</div>
+                                                <div class="spec-value">1.1-1.35V</div>
+                                            </div>
+                                            <div class="spec-item">
+                                                <div class="spec-name">Latencia</div>
+                                                <div class="spec-value">CL14-CL40</div>
+                                            </div>
+                                            <div class="spec-item">
+                                                <div class="spec-name">Ancho de banda</div>
+                                                <div class="spec-value">25.6-51.2 GB/s</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <h4><i class="fas fa-recycle"></i> Impacto Ambiental</h4>
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <div class="eco-facts">
+                                            <div class="eco-fact">
+                                                <i class="fas fa-industry"></i>
+                                                <span>Proceso de fabricación usa químicos corrosivos</span>
+                                            </div>
+                                            <div class="eco-fact">
+                                                <i class="fas fa-battery-three-quarters"></i>
+                                                <span>Consume 3-5W por módulo en operación</span>
+                                            </div>
+                                            <div class="eco-fact">
+                                                <i class="fas fa-recycle"></i>
+                                                <span>45% de materiales recuperables</span>
+                                            </div>
+                                        </div>
+                                        <div class="eco-image-container">
+                                            <img src="images/ram-recycling.jpg" alt="Reciclaje de RAM" class="eco-image">
+                                            <div class="eco-image-caption">Las memorias contienen metales preciosos recuperables</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pestaña Gráficos -->
+                <div class="tab-content" id="gpu">
+                    <div class="tab-content-inner">
+                        <div class="tab-image">
+                            <img src="images/gpu-card.jpg" alt="Tarjeta gráfica" class="component-img">
+                            <div class="image-hotspots">
+                                <div class="hotspot" style="top: 25%; left: 30%;" data-info="gpu-die">
+                                    <div class="hotspot-marker"></div>
+                                    <div class="hotspot-info">
+                                        <img src="images/gpu-die.jpg" alt="GPU Die" class="hotspot-img">
+                                        <h4>GPU Die</h4>
+                                        <p>Hasta 80 billones de transistores en chips gaming. Contiene miles de núcleos CUDA/Stream.</p>
+                                    </div>
+                                </div>
+                                <div class="hotspot" style="top: 60%; left: 70%;" data-info="vrm">
+                                    <div class="hotspot-marker"></div>
+                                    <div class="hotspot-info">
+                                        <img src="images/gpu-vrm.jpg" alt="VRM GPU" class="hotspot-img">
+                                        <h4>Módulos VRM</h4>
+                                        <p>Sistemas de 12-24 fases que entregan hasta 600W con 90%+ eficiencia.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-text">
+                            <div class="component-header">
+                                <h3>Unidad de Procesamiento Gráfico (GPU)</h3>
+                                <div class="component-badge eco-rating" data-rating="5">
+                                    <i class="fas fa-leaf"></i> Impacto: Muy Alto
+                                </div>
+                            </div>
+                            <p class="component-description">Las GPUs modernas son supercomputadoras en miniatura, capaces de procesar teraflops de datos. Las tarjetas high-end consumen tanta energía como un electrodoméstico grande, requiriendo sistemas de enfriamiento complejos con vapor chambers y múltiples ventiladores.</p>
+                            
+                            <div class="specs-accordion">
+                                <div class="accordion-item active">
+                                    <div class="accordion-header">
+                                        <h4><i class="fas fa-microscope"></i> Especificaciones Técnicas</h4>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <div class="specs-grid">
+                                            <div class="spec-item">
+                                                <div class="spec-name">Núcleos</div>
+                                                <div class="spec-value">Hasta 18,432 CUDA cores</div>
+                                            </div>
+                                            <div class="spec-item">
+                                                <div class="spec-name">Memoria</div>
+                                                <div class="spec-value">8-48GB GDDR6X</div>
+                                            </div>
+                                            <div class="spec-item">
+                                                <div class="spec-name">Ancho de banda</div>
+                                                <div class="spec-value">Hasta 1TB/s</div>
+                                            </div>
+                                            <div class="spec-item">
+                                                <div class="spec-name">TDP</div>
+                                                <div class="spec-value">250-600W</div>
+                                            </div>
+                                            <div class="spec-item">
+                                                <div class="spec-name">Proceso</div>
+                                                <div class="spec-value">4-7nm</div>
+                                            </div>
+                                            <div class="spec-item">
+                                                <div class="spec-name">Rendimiento</div>
+                                                <div class="spec-value">Hasta 100 TFLOPS</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <h4><i class="fas fa-recycle"></i> Impacto Ambiental</h4>
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <div class="eco-facts">
+                                            <div class="eco-fact">
+                                                <i class="fas fa-bolt"></i>
+                                                <span>Consumo anual equivalente a 3 refrigeradores</span>
+                                            </div>
+                                            <div class="eco-fact">
+                                                <i class="fas fa-weight"></i>
+                                                <span>2.5kg de CO₂ por hora de gaming intensivo</span>
+                                            </div>
+                                            <div class="eco-fact">
+                                                <i class="fas fa-mining"></i>
+                                                <span>Uso intensivo reduce vida útil a 3-5 años</span>
+                                            </div>
+                                        </div>
+                                        <div class="eco-image-container">
+                                            <img src="images/gpu-mining.jpg" alt="Granjas de minería" class="eco-image">
+                                            <div class="eco-image-caption">Las granjas de minería consumen tanta energía como países enteros</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pestaña Almacenamiento -->
+                <div class="tab-content" id="almacenamiento">
+                    <div class="tab-content-inner">
+                        <div class="tab-image">
+                            <img src="images/ssd-nvme.jpg" alt="Almacenamiento" class="component-img">
+                            <div class="image-hotspots">
+                                <div class="hotspot" style="top: 40%; left: 40%;" data-info="nand">
+                                    <div class="hotspot-marker"></div>
+                                    <div class="hotspot-info">
+                                        <img src="images/nand-chips.jpg" alt="Chips NAND" class="hotspot-img">
+                                        <h4>Chips NAND Flash</h4>
+                                        <p>Celdas 3D apiladas hasta 176 capas. QLC almacena 4 bits por celda (menor durabilidad).</p>
+                                    </div>
+                                </div>
+                                <div class="hotspot" style="top: 70%; left: 70%;" data-info="controller">
+                                    <div class="hotspot-marker"></div>
+                                    <div class="hotspot-info">
+                                        <img src="images/ssd-controller.jpg" alt="Controlador SSD" class="hotspot-img">
+                                        <h4>Controlador</h4>
+                                        <p>Procesador ARM con hasta 8 núcleos y algoritmos de wear-leveling.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-text">
+                            <div class="component-header">
+                                <h3>Almacenamiento</h3>
+                                <div class="component-badge eco-rating" data-rating="1">
+                                    <i class="fas fa-leaf"></i> Impacto: Bajo
+                                </div>
+                            </div>
+                            <p class="component-description">Los SSD NVMe modernos alcanzan velocidades de 7,000MB/s, superando 100x a los HDDs mecánicos. Utilizan celdas NAND 3D apiladas verticalmente y controladores inteligentes que distribuyen el desgaste para maximizar la vida útil (hasta 2,000 TB escritos).</p>
+                            
+                            <div class="specs-accordion">
+                                <div class="accordion-item active">
+                                    <div class="accordion-header">
+                                        <h4><i class="fas fa-microscope"></i> Especificaciones Técnicas</h4>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <div class="specs-grid">
+                                            <div class="spec-item">
+                                                <div class="spec-name">Tipo</div>
+                                                <div class="spec-value">NVMe PCIe 4.0/5.0</div>
+                                            </div>
+                                            <div class="spec-item">
+                                                <div class="spec-name">Capacidad</div>
+                                                <div class="spec-value">250GB-8TB</div>
+                                            </div>
+                                            <div class="spec-item">
+                                                <div class="spec-name">Velocidad</div>
+                                                <div class="spec-value">Hasta 14,000 MB/s</div>
+                                            </div>
+                                            <div class="spec-item">
+                                                <div class="spec-name">Durabilidad</div>
+                                                <div class="spec-value">150-2,400 TBW</div>
+                                            </div>
+                                            <div class="spec-item">
+                                                <div class="spec-name">Consumo</div>
+                                                <div class="spec-value">3-8W activo</div>
+                                            </div>
+                                            <div class="spec-item">
+                                                <div class="spec-name">Tecnología</div>
+                                                <div class="spec-value">3D NAND TLC/QLC</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <h4><i class="fas fa-recycle"></i> Impacto Ambiental</h4>
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <div class="eco-facts">
+                                            <div class="eco-fact">
+                                                <i class="fas fa-battery-quarter"></i>
+                                                <span>Consumo 90% menor que HDDs</span>
+                                            </div>
+                                            <div class="eco-fact">
+                                                <i class="fas fa-temperature-low"></i>
+                                                <span>No requiere enfriamiento activo</span>
+                                            </div>
+                                            <div class="eco-fact">
+                                                <i class="fas fa-history"></i>
+                                                <span>Vida útil 5-10 años</span>
+                                            </div>
+                                        </div>
+                                        <div class="eco-image-container">
+                                            <img src="images/ssd-recycling.jpg" alt="Reciclaje SSD" class="eco-image">
+                                            <div class="eco-image-caption">Los SSDs son más ecológicos que los HDDs tradicionales</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- Comparativa de generaciones -->
+            <div class="components-comparison animate__animated animate__fadeIn">
+                <h3><i class="fas fa-chart-line"></i> Evolución Técnica Comparada</h3>
+                <div class="comparison-grid">
+                    <div class="comparison-card">
+                        <div class="comparison-era">1990s</div>
+                        <div class="comparison-stats">
+                            <div class="stat-item">
+                                <div class="stat-name">CPU</div>
+                                <div class="stat-value">1-10M transistores</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-name">RAM</div>
+                                <div class="stat-value">4-32MB</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-name">Almacenamiento</div>
+                                <div class="stat-value">HDD 1-10GB</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-name">Consumo</div>
+                                <div class="stat-value">100-300W</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="comparison-card">
+                        <div class="comparison-era">2000s</div>
+                        <div class="comparison-stats">
+                            <div class="stat-item">
+                                <div class="stat-name">CPU</div>
+                                <div class="stat-value">50-300M transistores</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-name">RAM</div>
+                                <div class="stat-value">128MB-2GB</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-name">Almacenamiento</div>
+                                <div class="stat-value">HDD 20-500GB</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-name">Consumo</div>
+                                <div class="stat-value">150-400W</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="comparison-card">
+                        <div class="comparison-era">2010s</div>
+                        <div class="comparison-stats">
+                            <div class="stat-item">
+                                <div class="stat-name">CPU</div>
+                                <div class="stat-value">1-10B transistores</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-name">RAM</div>
+                                <div class="stat-value">4-32GB</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-name">Almacenamiento</div>
+                                <div class="stat-value">SSD 128GB-2TB</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-name">Consumo</div>
+                                <div class="stat-value">80-250W</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="comparison-card">
+                        <div class="comparison-era">2020s</div>
+                        <div class="comparison-stats">
+                            <div class="stat-item">
+                                <div class="stat-name">CPU</div>
+                                <div class="stat-value">10-50B transistores</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-name">RAM</div>
+                                <div class="stat-value">16-128GB</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-name">Almacenamiento</div>
+                                <div class="stat-value">NVMe 500GB-4TB</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-name">Consumo</div>
+                                <div class="stat-value">100-350W</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="materiales" class="materials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Materiales y Minerales en la Computación</h2>
+                <p>Los recursos naturales que hacen posible la tecnología digital</p>
+                <div class="divider"></div>
+            </div>
+
+            <div class="materials-intro">
+                <p>Una computadora promedio contiene hasta 60 elementos diferentes de la tabla periódica, muchos de ellos minerales escasos cuya extracción tiene importantes consecuencias ambientales y sociales. Estos materiales se distribuyen en todos los componentes electrónicos, desde la placa base hasta la pantalla.</p>
+            </div>
+
+            <div class="materials-grid">
+                <div class="material-card">
+                    <div class="material-icon gold">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h3>Oro (Au)</h3>
+                    <p>Usado en conectores, pines de CPU y GPU, y placas de circuito impreso por su excelente conductividad y resistencia a la corrosión. Se extrae mediante procesos que a menudo usan cianuro, un químico tóxico.</p>
+                    <div class="material-stats">
+                        <span><i class="fas fa-globe"></i> Principales productores: China, Australia, Rusia</span>
+                        <span><i class="fas fa-tint"></i> 25,000 litros de agua por onza (estimado)</span>
+                    </div>
+                </div>
+
+                <div class="material-card">
+                    <div class="material-icon silver">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h3>Plata (Ag)</h3>
+                    <p>Excelente conductor utilizado en contactos de interruptores, teclados y algunas capas de circuitos impresos. La minería de plata genera grandes cantidades de desechos que pueden contener metales pesados y otros contaminantes.</p>
+                    <div class="material-stats">
+                        <span><i class="fas fa-globe"></i> México, Perú, China</span>
+                        <span><i class="fas fa-mountain"></i> 50 toneladas de roca por kg (estimado)</span>
+                    </div>
+                </div>
+
+                <div class="material-card">
+                    <div class="material-icon copper">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h3>Cobre (Cu)</h3>
+                    <p>Esencial para el cableado interno, disipadores de calor y pistas en las placas de circuito impreso debido a su buena conductividad eléctrica y térmica. Su extracción puede llevar a la deforestación y la contaminación del agua por metales pesados.</p>
+                    <div class="material-stats">
+                        <span><i class="fas fa-globe"></i> Chile, Perú, China</span>
+                        <span><i class="fas fa-water"></i> Alto consumo de agua en el procesamiento</span>
+                    </div>
+                </div>
+
+                <div class="material-card">
+                    <div class="material-icon aluminum">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h3>Aluminio (Al)</h3>
+                    <p>Utilizado en carcasas, disipadores de calor y algunos componentes internos por su ligereza y buena conductividad térmica. La producción de aluminio es intensiva en energía.</p>
+                    <div class="material-stats">
+                        <span><i class="fas fa-globe"></i> China, Rusia, Canadá</span>
+                        <span><i class="fas fa-power-off"></i> Alto consumo energético en la electrólisis de la bauxita</span>
+                    </div>
+                </div>
+
+                <div class="material-card">
+                    <div class="material-icon silicon">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h3>Silicio (Si)</h3>
+                    <p>El material semiconductor fundamental en microprocesadores, chips de memoria y otros circuitos integrados. Se obtiene principalmente de la sílice (cuarzo), un mineral abundante, pero su purificación requiere mucha energía.</p>
+                    <div class="material-stats">
+                        <span><i class="fas fa-globe"></i> China, Australia, Estados Unidos</span>
+                        <span><i class="fas fa-industry"></i> Procesamiento en salas limpias con alta demanda de energía y agua ultrapura</span>
+                    </div>
+                </div>
+
+                <div class="material-card">
+                    <div class="material-icon cobalt">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h3>Cobalto (Co)</h3>
+                    <p>Crítico para las baterías recargables de laptops y teléfonos móviles. Gran parte del cobalto mundial proviene de la República Democrática del Congo, donde las condiciones de minería a menudo son peligrosas y se asocian con trabajo infantil.</p>
+                    <div class="material-stats">
+                        <span><i class="fas fa-globe"></i> República Democrática del Congo, Australia, Canadá</span>
+                        <span><i class="fas fa-exclamation-triangle"></i> Preocupaciones éticas y laborales en la minería</span>
+                    </div>
+                </div>
+
+                <div class="material-card">
+                    <div class="material-icon lithium">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h3>Litio (Li)</h3>
+                    <p>Otro componente esencial de las baterías de iones de litio. Su extracción de salmueras y depósitos minerales tiene un impacto significativo en los recursos hídricos y los ecosistemas locales.</p>
+                    <div class="material-stats">
+                        <span><i class="fas fa-globe"></i> Australia, Chile, Argentina</span>
+                        <span><i class="fas fa-water"></i> Alto consumo de agua en la extracción de salmueras</span>
+                    </div>
+                </div>
+
+                <div class="material-card">
+                    <div class="material-icon tin">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h3>Estaño (Sn)</h3>
+                    <p>Utilizado en soldaduras para unir componentes electrónicos a las placas de circuito. También es considerado un "mineral de conflicto", especialmente el originario de la región de los Grandes Lagos de África.</p>
+                    <div class="material-stats">
+                        <span><i class="fas fa-globe"></i> China, Indonesia, Birmania</span>
+                        <span><i class="fas fa-handshake-slash"></i> Asociado con conflictos y condiciones laborales precarias</span>
+                    </div>
+                </div>
+
+                <div class="material-card">
+                    <div class="material-icon tantalum">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h3>Tántalo (Ta)</h3>
+                    <p>Fundamental en la fabricación de condensadores electrolíticos, componentes clave en muchos dispositivos electrónicos. El mineral del que se extrae, la columbita-tantalita (coltán), también es un "mineral de conflicto".</p>
+                    <div class="material-stats">
+                        <span><i class="fas fa-globe"></i> República Democrática del Congo, Ruanda, Australia</span>
+                        <span><i class="fas fa-tree"></i> Su extracción ha contribuido a la deforestación y la pérdida de hábitat</span>
+                    </div>
+                </div>
+
+                <div class="material-card">
+                    <div class="material-icon tungsten">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h3>Wolframio (W)</h3>
+                    <p>Usado en contactos eléctricos y como parte de aleaciones para componentes resistentes. También es considerado un "mineral de conflicto".</p>
+                    <div class="material-stats">
+                        <span><i class="fas fa-globe"></i> China, Vietnam, Rusia</span>
+                        <span><i class="fas fa-balance-scale"></i> Impacto en la biodiversidad y comunidades locales</span>
+                    </div>
+                </div>
+
+                <div class="material-card">
+                    <div class="material-icon neodymium">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h3>Neodimio (Nd)</h3>
+                    <p>Una de las tierras raras utilizadas en la fabricación de imanes potentes que se encuentran en los altavoces, motores de disco duro y unidades de DVD/CD.</p>
+                    <div class="material-stats">
+                        <span><i class="fas fa-globe"></i> China (dominante), Estados Unidos, Australia</span>
+                        <span><i class="fas fa-radiation"></i> La extracción y procesamiento generan residuos radiactivos y tóxicos</span>
+                    </div>
+                </div>
+
+                <div class="material-card">
+                    <div class="material-icon praseodymium">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h3>Praseodimio (Pr)</h3>
+                    <p>Otra tierra rara utilizada en aleaciones para imanes de alta potencia, a menudo junto con el neodimio.</p>
+                    <div class="material-stats">
+                        <span><i class="fas fa-globe"></i> China (dominante), Estados Unidos, Australia</span>
+                        <span><i class="fas fa-flask"></i> Procesamiento químico complejo con riesgos ambientales</span>
+                    </div>
+                </div>
+
+                <div class="material-card">
+                    <div class="material-icon terbium">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h3>Terbio (Tb)</h3>
+                    <p>Una tierra rara utilizada en fósforos para pantallas y en algunos imanes.</p>
+                    <div class="material-stats">
+                        <span><i class="fas fa-globe"></i> China (dominante), Myanmar, Australia</span>
+                        <span><i class="fas fa-exclamation"></i> Su extracción contribuye a la degradación ambiental</span>
+                    </div>
+                </div>
+
+                <div class="material-card">
+                    <div class="material-icon dysprosium">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h3>Disprosio (Dy)</h3>
+                    <p>Otra tierra rara importante para los imanes de alto rendimiento utilizados en motores y generadores, incluidos los de algunos discos duros.</p>
+                    <div class="material-stats">
+                        <span><i class="fas fa-globe"></i> China (dominante), Australia, Estados Unidos</span>
+                        <span><i class="fas fa-envira"></i> Impactos significativos en los ecosistemas locales</span>
+                    </div>
+                </div>
+
+                <div class="material-card">
+                    <div class="material-icon gallium">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h3>Galio (Ga)</h3>
+                    <p>Utilizado en semiconductores, LEDs y algunos tipos de paneles solares que alimentan dispositivos electrónicos.</p>
+                    <div class="material-stats">
+                        <span><i class="fas fa-globe"></i> China (dominante), Alemania, Kazajistán</span>
+                        <span><i class="fas fa-industry"></i> A menudo es un subproducto de la producción de aluminio y zinc</span>
+                    </div>
+                </div>
+
+                <div class="material-card">
+                    <div class="material-icon germanium">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h3>Germanio (Ge)</h3>
+                    <p>Usado en algunos semiconductores y en la fabricación de fibra óptica, esencial para la comunicación de datos en internet.</p>
+                    <div class="material-stats">
+                        <span><i class="fas fa-globe"></i> China (dominante), Rusia, Estados Unidos</span>
+                        <span><i class="fas fa-lightbulb"></i> Importante para tecnologías de comunicación y energía solar</span>
+                    </div>
+                </div>
+
+                <div class="material-card">
+                    <div class="material-icon indium">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h3>Indio (In)</h3>
+                    <p>Componente clave del óxido de indio y estaño (ITO), una capa conductora transparente utilizada en pantallas táctiles y LCDs.</p>
+                    <div class="material-stats">
+                        <span><i class="fas fa-globe"></i> China (dominante), Canadá, Corea del Sur</span>
+                        <span><i class="fas fa-tv"></i> Fundamental para la tecnología de visualización moderna</span>
+                    </div>
+                </div>
+
+                <div class="material-card">
+                    <div class="material-icon boron">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h3>Boro (B)</h3>
+                    <p>Utilizado en semiconductores y en la fabricación de algunos tipos de vidrio para pantallas.</p>
+                    <div class="material-stats">
+                        <span><i class="fas fa-globe"></i> Turquía (dominante), Estados Unidos, Rusia</span>
+                        <span><i class="fas fa-hard-hat"></i> Su extracción puede tener impactos en la salud y el medio ambiente local</span>
+                    </div>
+                </div>
+
+                <div class="material-card">
+                    <div class="material-icon lead">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h3>Plomo (Pb)</h3>
+                    <p>Aunque su uso está cada vez más restringido debido a su toxicidad, todavía se encuentra en algunas soldaduras antiguas y en ciertos componentes de baterías.</p>
+                    <div class="material-stats">
+                        <span><i class="fas fa-globe"></i> China, Australia, Estados Unidos</span>
+                        <span><i class="fas fa-skull-crossbones"></i> Metal pesado tóxico con graves riesgos para la salud</span>
+                    </div>
+                </div>
+
+                <div class="material-card">
+                    <div class="material-icon mercury">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h3>Mercurio (Hg)</h3>
+                    <p>Históricamente utilizado en algunos interruptores y relés, su uso se ha reducido significativamente debido a su alta toxicidad.</p>
+                    <div class="material-stats">
+                        <span><i class="fas fa-globe"></i> China, México, Argelia</span>
+                        <span><i class="fas fa-biohazard"></i> Neurotoxina peligrosa que contamina el medio ambiente</span>
+                    </div>
+                </div>
+
+                </div>
+
+            <div class="mining-impact">
+                <h3>Impacto de la Minería de Minerales Tecnológicos</h3>
+                <div class="impact-visualization">
+                    <div class="impact-item water">
+                        <div class="impact-icon"><i class="fas fa-tint"></i></div>
+                        <div class="impact-text">
+                            <h4>Contaminación hídrica</h4>
+                            <p>La minería consume y contamina millones de litros de agua con metales pesados, ácidos y químicos tóxicos como el cianuro, afectando la salud humana y los ecosistemas.</p>
+                        </div>
+                    </div>
+                    <div class="impact-item land">
+                        <div class="impact-icon"><i class="fas fa-mountain"></i></div>
+                        <div class="impact-text">
+                            <h4>Degradación de suelos</h4>
+                            <p>La minería a cielo abierto destruye ecosistemas completos, provoca la erosión del suelo, la deforestación y deja tierras improductivas y contaminadas a largo plazo.</p>
+                        </div>
+                    </div>
+                    <div class="impact-item social">
+                        <div class="impact-icon"><i class="fas fa-users"></i></div>
+                        <div class="impact-text">
+                            <h4>Conflictos sociales</h4>
+                            <p>La explotación de "minerales de conflicto" como el coltán, el estaño, el wolframio y el oro financia grupos armados y contribuye a la inestabilidad en regiones como la República Democrática del Congo, además de generar abusos laborales y desplazamiento de comunidades.</p>
+                        </div>
+                    </div>
+                    <div class="impact-item health">
+                        <div class="impact-icon"><i class="fas fa-heartbeat"></i></div>
+                        <div class="impact-text">
+                            <h4>Riesgos para la salud</h4>
+                            <p>La exposición a polvo, metales pesados y químicos tóxicos en las minas y durante el procesamiento de minerales causa graves problemas de salud en los trabajadores y las comunidades cercanas.</p>
+                        </div>
+                    </div>
+                    <div class="impact-item air">
+                        <div class="impact-icon"><i class="fas fa-smog"></i></div>
+                        <div class="impact-text">
+                            <h4>Contaminación atmosférica</h4>
+                            <p>La minería libera grandes cantidades de partículas, gases tóxicos y polvo que contaminan el aire, contribuyendo al cambio climático y afectando la calidad del aire local.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="material-process">
+                    <h4>Proceso de fabricación de circuitos integrados</h4>
+                    <ol class="process-steps">
+                        <li>Extracción de minerales (cobre, silicio, oro, tantalio, etc.) con impactos ambientales y sociales.</li>
+                        <li>Purificación y refinamiento de los minerales, un proceso que consume mucha energía y genera residuos.</li>
+                        <li>Fabricación de obleas de silicio en salas limpias con estrictos controles de contaminación y alto consumo de energía y agua ultrapura.</li>
+                        <li>Fotolitografía para grabar los intrincados circuitos en las obleas, utilizando químicos tóxicos y precisos procesos.</li>
+                        <li>Grabado químico para eliminar material no deseado, generando efluentes que deben ser tratados.</li>
+                        <li>Implantación de iones para modificar las propiedades eléctricas del silicio.</li>
+                        <li>Pruebas y corte de las obleas en chips individuales.</li>
+                        <li>Ensamblaje y empaquetado de los chips, utilizando más materiales como plásticos y metales.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de impacto ambiental -->
+    <section id="impacto" class="impact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Impacto Ambiental de la Computación</h2>
+                <p>La huella ecológica de nuestra vida digital</p>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="impact-highlights">
+                <div class="impact-figure">
+                    <div class="figure-number">50</div>
+                    <div class="figure-label">Millones de toneladas de residuos electrónicos anuales</div>
+                </div>
+                <div class="impact-figure">
+                    <div class="figure-number">80%</div>
+                    <div class="figure-label">De los dispositivos no se reciclan adecuadamente</div>
+                </div>
+                <div class="impact-figure">
+                    <div class="figure-number">1.5</div>
+                    <div class="figure-label">Millones de litros de agua para fabricar chips</div>
+                </div>
+            </div>
+            
+            <div class="lifecycle-analysis">
+                <h3>Análisis de Ciclo de Vida de una Computadora</h3>
+                <div class="lifecycle-stages">
+                    <div class="stage">
+                        <div class="stage-icon"><i class="fas fa-mountain"></i></div>
+                        <h4>Extracción</h4>
+                        <p>Minería de 30+ minerales diferentes con alto impacto ambiental</p>
+                    </div>
+                    <div class="stage-arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="stage">
+                        <div class="stage-icon"><i class="fas fa-industry"></i></div>
+                        <h4>Fabricación</h4>
+                        <p>Procesos químicos intensivos en energía y agua</p>
+                    </div>
+                    <div class="stage-arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="stage">
+                        <div class="stage-icon"><i class="fas fa-shipping-fast"></i></div>
+                        <h4>Distribución</h4>
+                        <p>Transporte global con emisiones de CO2</p>
+                    </div>
+                    <div class="stage-arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="stage">
+                        <div class="stage-icon"><i class="fas fa-plug"></i></div>
+                        <h4>Uso</h4>
+                        <p>Consumo eléctrico durante 3-5 años de vida útil</p>
+                    </div>
+                    <div class="stage-arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="stage">
+                        <div class="stage-icon"><i class="fas fa-trash"></i></div>
+                        <h4>Desecho</h4>
+                        <p>Riesgo de contaminación si no se recicla correctamente</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="e-waste-facts">
+                <div class="e-waste-image">
+                    <img src="images/e-waste.jpg" alt="Residuos electrónicos">
+                </div>
+                <div class="e-waste-text">
+                    <h3>El problema de los residuos electrónicos</h3>
+                    <p>Los dispositivos electrónicos desechados representan el flujo de residuos de más rápido crecimiento en el mundo, con graves consecuencias:</p>
+                    <ul>
+                        <li><strong>Toxicidad:</strong> Plomo, mercurio y retardantes de llama pueden filtrarse al medio ambiente</li>
+                        <li><strong>Pérdida de recursos:</strong> Metales preciosos rara vez se recuperan completamente</li>
+                        <li><strong>Exportación ilegal:</strong> Gran parte termina en vertederos de países en desarrollo</li>
+                        <li><strong>Salud pública:</strong> Trabajadores expuestos a químicos peligrosos al desmantelar dispositivos</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="carbon-footprint">
+                <h3>Huella de Carbono de la Tecnología Digital</h3>
+                <div class="footprint-visualization">
+                    <div class="footprint-item">
+                        <div class="footprint-bar" style="height: 70%;" data-value="70"></div>
+                        <div class="footprint-label">Fabricación</div>
+                    </div>
+                    <div class="footprint-item">
+                        <div class="footprint-bar" style="height: 25%;" data-value="25"></div>
+                        <div class="footprint-label">Uso</div>
+                    </div>
+                    <div class="footprint-item">
+                        <div class="footprint-bar" style="height: 5%;" data-value="5"></div>
+                        <div class="footprint-label">Transporte</div>
+                    </div>
+                </div>
+                <p class="footprint-note">* Porcentajes aproximados de emisiones de CO2 en el ciclo de vida de una laptop</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de soluciones -->
+    <section id="soluciones" class="solutions-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Soluciones y Alternativas Sostenibles</h2>
+                <p>Cómo reducir el impacto ambiental de la tecnología</p>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="solutions-intro">
+                <p>Frente a los desafíos ambientales, surgen diversas estrategias para hacer la computación más sostenible, desde el diseño de productos hasta el comportamiento de los consumidores.</p>
+            </div>
+            
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <div class="solution-icon"><i class="fas fa-recycle"></i></div>
+                    <h3>Reciclaje Responsable</h3>
+                    <p>Programas especializados para recuperar metales preciosos y manejar materiales peligrosos de forma segura.</p>
+                    <a href="#" class="solution-link">Ver centros de reciclaje <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="solution-card">
+                    <div class="solution-icon"><i class="fas fa-wrench"></i></div>
+                    <h3>Reparación y Reuso</h3>
+                    <p>Extender la vida útil de los dispositivos mediante reparaciones y actualizaciones.</p>
+                    <a href="#" class="solution-link">Guía de reparación <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <!-- Más tarjetas de soluciones... -->
+            </div>
+            
+            <div class="eco-design">
+                <h3>Diseño Ecológico de Hardware</h3>
+                <div class="eco-features">
+                    <div class="eco-feature">
+                        <div class="eco-icon"><i class="fas fa-battery-three-quarters"></i></div>
+                        <div class="eco-text">
+                            <h4>Eficiencia Energética</h4>
+                            <p>Procesadores de bajo consumo y sistemas de gestión de energía avanzados.</p>
+                        </div>
+                    </div>
+                    <div class="eco-feature">
+                        <div class="eco-icon"><i class="fas fa-screwdriver"></i></div>
+                        <div class="eco-text">
+                            <h4>Modularidad</h4>
+                            <p>Diseños que permiten actualizar componentes individuales en lugar de todo el dispositivo.</p>
+                        </div>
+                    </div>
+                    <div class="eco-feature">
+                        <div class="eco-icon"><i class="fas fa-leaf"></i></div>
+                        <div class="eco-text">
+                            <h4>Materiales Sostenibles</h4>
+                            <p>Uso de plásticos reciclados, metales recuperados y alternativas menos tóxicas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="personal-action">
+                <h3>¿Qué Puedes Hacer Tú?</h3>
+                <div class="action-steps">
+                    <div class="action-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Extiende la vida útil</h4>
+                            <p>Usa tu computadora al menos 4-5 años antes de reemplazarla.</p>
+                        </div>
+                    </div>
+                    <div class="action-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Recicla correctamente</h4>
+                            <p>Lleva tus dispositivos viejos a centros de reciclaje certificados.</p>
+                        </div>
+                    </div>
+                    <div class="action-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Compra responsable</h4>
+                            <p>Elige marcas con compromisos ambientales verificados.</p>
+                        </div>
+                    </div>
+                    <div class="action-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>Reduce el consumo</h4>
+                            <p>Apaga dispositivos cuando no los uses y optimiza su configuración energética.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="innovation-spotlight">
+                <h3>Innovaciones Prometedoras</h3>
+                <div class="innovation-slider">
+                    <div class="innovation-slide">
+                        <div class="innovation-image">
+                            <img src="images/recycling.jpg" alt="Reciclaje robótico">
+                        </div>
+                        <div class="innovation-text">
+                            <h4>Robots para reciclaje de e-waste</h4>
+                            <p>Sistemas automatizados que desensamblan dispositivos y clasifican componentes con mayor precisión que los humanos.</p>
+                        </div>
+                    </div>
+                    <!-- Más slides... -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contacto y Recursos Adicionales</h2>
+                <p>¿Tienes preguntas o quieres saber más?</p>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-form">
+                    <h3>Envíanos un mensaje</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Asunto</label>
+                            <select id="subject" name="subject">
+                                <option value="question">Pregunta general</option>
+                                <option value="recycling">Reciclaje electrónico</option>
+                                <option value="education">Material educativo</option>
+                                <option value="other">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+                
+                <div class="contact-resources">
+                    <h3>Recursos adicionales</h3>
+                    <div class="resource-list">
+                        <div class="resource-item">
+                            <h4><i class="fas fa-book"></i> Libros recomendados</h4>
+                            <ul>
+                                <li><a href="#">"The Story of Stuff" - Annie Leonard</a></li>
+                                <li><a href="#">"Cradle to Cradle" - McDonough & Braungart</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-item">
+                            <h4><i class="fas fa-globe"></i> Organizaciones</h4>
+                            <ul>
+                                <li><a href="#">Greenpeace Electronics</a></li>
+                                <li><a href="#">Basel Action Network</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-item">
+                            <h4><i class="fas fa-map-marker-alt"></i> Centros de reciclaje</h4>
+                            <p>Encuentra el centro de reciclaje electrónico más cercano a tu ubicación.</p>
+                            <a href="#" class="btn btn-outline">Buscar centros <i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>TU<span>PC</span></h3>
+                    <p>Información educativa sobre tecnología sostenible. Última actualización: Mayo 2025.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Explorar</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#historia">Historia</a></li>
+                        <li><a href="#componentes">Componentes</a></li>
+                        <li><a href="#materiales">Materiales</a></li>
+                        <li><a href="#impacto">Impacto</a></li>
+                        <li><a href="#soluciones">Soluciones</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="#">Guías de reciclaje</a></li>
+                        <li><a href="#">Calculadora de huella</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Glosario técnico</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Términos de uso</a></li>
+                        <li><a href="#">Privacidad</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">Aviso legal</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2025 TUPC. Todos los derechos reservados.
+                </div>
+                <div class="footer-links">
+                    <a href="#">Mapa del sitio</a>
+                    <a href="#">Contacto</a>
+                    <a href="#">Accesibilidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón de volver arriba -->
+    <button id="backToTop" class="back-to-top" aria-label="Volver arriba">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.1/lottie.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
