@@ -84,7 +84,7 @@
 
   <p><em>▼ Interfaz responsive en diferentes secciones ▼</em></p>
 
-    <!-- Fila 3 -->
+  <!-- Fila 3 -->
   <div style="margin-top: 20px;">
     <img src="images/CAP5.png" alt="Análisis de impacto ambiental" width="45%" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
     <img src="images/CAP6.png" alt="Soluciones sostenibles" width="45%" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
