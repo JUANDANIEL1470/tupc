@@ -64,10 +64,13 @@
 🌍 Calculadora de huella de carbono
 ✍️ Blog sobre tecnología verde
 
+---
 ✨ Autor
 <p align="center"> <a href="https://portjuandanield.web.app/"> <img src="https://img.shields.io/badge/Portafolio-Juan_Daniel-2E7D32?style=for-the-badge&logo=googlechrome&logoColor=white"> </a> </p>
-<div align="center"> <img src="https://visitor-badge.laobi.icu/badge?page_id=JUANDANIEL1470.tupc" alt="Visitas"> <img src="https://img.shields.io/github/last-commit/JUANDANIEL1470/tupc?color=2E7D32" alt="Último commit"> </div><p align="center"> <sub>© 2025 TUPC - Tecnología con Conciencia Ecológica</sub> </p> ```📸 Vista Previa
-<div align="center"> <img src="images/motherboard.jpg" width="45%"> <img src="images/e-waste.jpg" width="45%"> </div>
+<div align="center"> <img src="https://visitor-badge.laobi.icu/badge?page_id=JUANDANIEL1470.tupc" alt="Visitas"> <img src="https://img.shields.io/github/last-commit/JUANDANIEL1470/tupc?color=2E7D32" alt="Último commit"> </div><p align="center"> <sub>© 2025 TUPC - Tecnología con Conciencia Ecológica</sub> </p> 
 
 ---
-
+---
+## 📸 Vista Previa
+<div align="center"> <img src="images/motherboard.jpg" width="45%"> <img src="images/e-waste.jpg" width="45%"> </div>
+---
